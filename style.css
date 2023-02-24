@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=League+Gothic&family=Roboto+Mono&display=swap');
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+:root{
+--bc-body:#e7e4dc;
+--bc-container: #e3d9bf;
+--bc-container2:#bbb190;
+--color-span:#000;
+--bc-botao:#000000;
+}
+body{
+    background-color: var(--bc-body);
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    justify-content: center;
+    align-items: center;;
+}
+.container{
+background-color:var(--bc-container);
+width: 140vh;
+height: 30vw;
+border-radius: 1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 30px;
+position:relative;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bc-container2);
+    width: 30vh;
+    height: 45vh;
+    border-radius: 2rem;
+}
+.container2 span{
+    font-family: 'League Gothic';
+    opacity: 0.9;
+    color:var(--color-span);
+}
+.spanhora{
+    font-size: 150px;
+}
+.tempo{
+    font-size: 30px;
+}
+.botao{
+    position:absolute;
+    right: 70px;
+    top: 25px;
+}
+.botao button{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border:0px;
+    background-color:var(--bc-botao);
+    cursor: pointer;
+}
+.escondido{
+    display: none;
+}
+.dark{
+    --bc-body:#000000;
+    --bc-container: #191917;
+    --bc-container2:#bab8b8;
+    --color-span:#000;
+    --bc-botao:#dfded9;
+}
